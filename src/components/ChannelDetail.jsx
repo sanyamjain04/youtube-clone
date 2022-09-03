@@ -20,7 +20,7 @@ const ChannelDetail = () => {
   }, [id]);
 
   return (
-    <div className="h-[89vh] overflow-auto">
+    <div className="h-[90vh] overflow-auto">
       <div
         className="h-48 z-50"
         style={{

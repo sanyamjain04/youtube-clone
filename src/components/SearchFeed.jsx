@@ -17,7 +17,7 @@ const SearchFeed = () => {
 
   return (
     <div className="flex-row sm:flex  h-[70%]">
-      <div className=" overflow-scroll sm:h-[89vh] ml-2 flex-1">
+      <div className=" overflow-scroll sm:h-[90vh] ml-2 flex-1">
         <p className="ml-5 text-lg" style={{ color: "white" }}>
           Search Results for <span style={{ color: "#f31503" }}>{searchTerm}</span>
         </p>
