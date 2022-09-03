@@ -7,7 +7,7 @@ const Sidebar = ({ selectedCategory, setSelectedCategory }) => {
     <div className="overflow-scroll h-auto sm:h-[95%] flex sm:inline-block">
       {categories.map((category) => (
         <button
-          className="category-btn"
+          className="category-btn "
           style={{
             background: category.name === selectedCategory && "#fc1503",
             color: "white",
@@ -24,6 +24,7 @@ const Sidebar = ({ selectedCategory, setSelectedCategory }) => {
             {category.icon}
           </span>
           <span
+            className="whitespace-nowrap"
             style={{ opacity: category.name === selectedCategory ? 1 : 0.8 }}
           >
             {category.name}

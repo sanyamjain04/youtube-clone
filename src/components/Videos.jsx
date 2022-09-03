@@ -3,12 +3,12 @@ import React from 'react'
 import {VideoCard, ChannelCard} from './index'
 
 const Videos = ({videos}) => {
-    console.log(videos)
+    if(!videos?.length) return 'Loading...'
 
   return (
-    <div className='gap-1 flex-wrap justify-center'>
+    <div className=' flex flex-wrap gap-3 justify-center '>
         {videos.map((item, idx) => (
-            <div key={idx}>
+            <div className='' key={idx}>
                 {item.id.videoId && <VideoCard video={item} /> }
                 {item.id.channelId && <ChannelCard channelDetail={item} /> }
             </div>

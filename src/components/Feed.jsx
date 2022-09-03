@@ -29,8 +29,8 @@ const Feed = () => {
 
       {/* Feed Videos Part */}
 
-      <div className=" overflow-scroll sm:h-[80vh] ml-2 flex-2">
-        <p style={{ color: "white" }}>
+      <div className=" overflow-scroll sm:h-[89vh] ml-2 flex-1">
+        <p  className="ml-5 text-lg" style={{ color: "white" }}>
           {selectedCategory} <span style={{ color: "#f31503" }}>Videos</span>
         </p>
 

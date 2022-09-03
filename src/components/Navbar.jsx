@@ -5,10 +5,11 @@ import SearchBar from "./SearchBar";
 
 const Navbar = () => {
   return (
-    <nav className="flex h-20 justify-between items-center sticky t-0 z-10 ">
+    <nav className="flex h-[10vh] justify-between items-center sticky t-0 z-10 ">
       <div>
         <Link to="/" style={{ display: "flex", alignItems: "center" }}>
-          <img className="p-5" src={logo} alt="logo" width={85} />
+          <img className="p-5" src={logo} alt="logo" width={85} />{" "}
+          <span className="text-white">Youtube</span>
         </Link>
       </div>
       <SearchBar />

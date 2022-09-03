@@ -15,22 +15,26 @@ const VideoCard = ({
     snippet,
   },
 }) => (
-  <div className="w-full sm:w-[320px]">
+  <div className=" flex flex-col bg-red-500 w-[280px] h-[250px]">
     {/* Video Thumbnail */}
 
-    <Link to={videoId ? `/video/${videoId}` : demoVideoUrl}>
-      <img
-        className=" w-[358px] object-contain"
-        src={snippet?.thumbnails?.high?.url || demoThumbnailUrl}
-        alt={snippet?.title}
-      />
-    </Link>
+    <div className="">
+      <Link to={videoId ? `/video/${videoId}` : demoVideoUrl}>
+        <img
+          className=" w-[280px] h-[150px]"
+          src={snippet?.thumbnails?.medium?.url || demoThumbnailUrl}
+          alt={snippet?.title}
+        />
+      </Link>
+    </div>
 
     {/* Video title  */}
 
-    <div className="bg-[#1e1e1e] h-[106] flex-col">
+     <div
+     className="bg-[#1e1e1e] h-[106px] flex-col p-2"
+    >
       <Link to={videoId ? `/video/${videoId}` : demoVideoUrl}>
-        <p className="text-white font-bold">
+        <p className="text-white text-base mb-2">
           {snippet?.title.slice(0, 60) || demoVideoTitle.slice(0, 60)}
         </p>
       </Link>
@@ -41,12 +45,12 @@ const VideoCard = ({
       >
         {/* Video Channel name */}
 
-        <p className="text-gray-300 flex items-center">
+        <p className="text-gray-300 text-xs flex items-center">
           {snippet?.channelTitle || demoChannelTitle}
           <AiOutlineCheckCircle className="text-[12px] ml-1" />
         </p>
       </Link>
-    </div>
+    </div> 
   </div>
 );
 

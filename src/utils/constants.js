@@ -17,7 +17,9 @@ export const logo = 'https://i.ibb.co/s9Qys2j/logo.png';
 
 export const categories = [
   { name: 'New', icon: <AiFillHome /> },
-//   // { name: 'JS Mastery', icon: <CodeIcon />, },
+  // { name: 'Mr Beast', icon: <MdFaceRetouchingNatural />, },
+  // { name: 'JS Mastery', icon: <BsCode />, },
+  // { name: 'Dhruv Rathee', icon: <IoIosSchool />, },
   { name: 'Coding', icon: <BsCode />, },
   { name: 'ReactJS', icon: <BsCode />, },
   { name: 'NextJS', icon: <BsCode />, },
